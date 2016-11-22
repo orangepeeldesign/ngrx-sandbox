@@ -20,7 +20,6 @@ export class ItemsService {
         this.http.get(BASE_URL)
             .map(res => {
                 res.json()
-                console.log(res.json());
             })
             .map(payload => ({ type: 'ADD_ITEMS', payload }))
             .subscribe(action => this.store.dispatch(action));
