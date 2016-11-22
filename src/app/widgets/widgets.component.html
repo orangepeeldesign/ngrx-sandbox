@@ -1,0 +1,11 @@
+<h4>Fix my inputs and outputs!</h4>
+<div class="mdl-grid items">
+    <div class="mdl-cell mdl-cell--6-col">
+        <widgets-list [widgets]="widgets"
+                      (selected)="selectWidget($event)"></widgets-list>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <widget-details (saved)="saveWidget($event)"
+                        [widget]="selectedWidget | async"></widget-details>
+    </div>
+</div>

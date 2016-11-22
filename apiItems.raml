@@ -1,0 +1,23 @@
+#%RAML 0.8
+
+title: Manage Subscription API
+baseUri: http://localhost:3000/
+version: v1
+
+#TO DO
+#Define Types & Traits For Corresponding API Request/response
+# See:
+#https://github.com/eugenp/tutorials/blob/master/raml/modularization/api-with-typed-fragments.raml
+
+
+/items:
+  description: Retrieves Test Storage Items
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include ramlExamples/items.json
+
+
+
