@@ -16,6 +16,7 @@ import {ItemsDetail} from "./items/items-detail.component";
 import {GadgetService} from "./shared/services/gadget-service";
 import {ItemsService} from "./shared/services/items-service";
 import {WidgetsService} from "./shared/services/widgets-service";
+import {routing} from "./app.routes";
 
 @NgModule({
     declarations: [
@@ -31,6 +32,7 @@ import {WidgetsService} from "./shared/services/widgets-service";
         BrowserModule,
         FormsModule,
         HttpModule,
+        routing,
         StoreModule.provideStore({items, selectedItem, selectedWidget})
     ],
     providers: [GadgetService, ItemsService, WidgetsService],

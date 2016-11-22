@@ -1,7 +1,7 @@
 import {Widget} from "../models/widget";
 import {Http, Headers} from "@angular/http";
 import {Injectable} from "@angular/core";
-const BASE_URL = 'http://localhost:3000/widgets';
+const BASE_URL = 'http://localhost:3000/widgets/';
 const HEADER = { headers: new Headers({ 'Content-Type': 'application/json' }) };
 
 @Injectable()
